@@ -1,10 +1,11 @@
-# Semantic HTML Blog Project
+# Tailwind CSS & Semantic HTML Practice Project
 
 ## 📄 Overview
 
-This project is a step-by-step practice of creating a well-structured, semantic, and accessible HTML document. The goal is to understand and implement best practices in semantic HTML, accessibility (ARIA roles), and basic metadata for SEO.
+This project is a hands-on exploration of semantic HTML and Tailwind CSS, focused on building responsive, accessible, and well-structured web layouts. Each task builds progressively from fundamental HTML semantics to advanced utility-first CSS techniques using Tailwind.
 
-## ✅ Objectives Achieved
+
+## ✅ Project Breakdown
 
 ### ✅ 1. Basic HTML Structure (`0-index.html`)
 - Created an HTML5 document using `<!DOCTYPE html>`.
@@ -64,11 +65,137 @@ This project is a step-by-step practice of creating a well-structured, semantic,
 ## 🛠️ Tools Used
 - HTML5
 - Manual editing in a text editor (e.g. VS Code)
+  
+## 📂 Project Structure
+
+```
+0x00-semantic html/
+├── 0-index.html              
+├── 1-index.html              
+├── 2-index.html              
+├── 3-index.html             
+```
+---
+
+## 📅 Tailwind CSS Layout Practice
+
+### 5. Tailwind Setup (`tailwind.config.js`, `src/input.css`, `src/output.css`)
+- Installed and configured Tailwind CSS via CLI.
+- Created `tailwind.config.js` to scan `src/**/*.{html,js}`.
+- Used `@tailwind base;`, `@tailwind components;`, and `@tailwind utilities;` in `input.css`.
+- Ran CLI to watch and generate `output.css`.
 
 ---
 
-## 📌 Author
-**Tracy Karanja🌸**
+### 6. Basic Grid Layout (`src/1-index.html`)
+- Created a 3-column CSS grid layout using Tailwind:
+  ```html
+  class="grid grid-cols-3 gap-4"
+
+* Applied background colors and responsive design.
+
+---
+
+### 7. Nested Grids (`src/2-index.html`)
+
+* Created a 2x2 grid layout with nested grids inside each column.
+* Styled inner content with gradient backgrounds and padding.
+
+---
+
+### 8. Flexbox Navigation Bar (`src/3-nav_index.html`)
+
+* Created a horizontal nav bar with Tailwind Flexbox.
+* Applied spacing, text styling, hover effects, and responsive column behavior using media queries.
+
+---
+
+### 9. Responsive Flexbox Layout (`src/4-flexbox_index.html`)
+
+* Used `flex` class to layout an `aside` and `section`.
+* Applied width classes (`w-1/3` and `w-2/3`) and responsive direction changes.
+
+---
+
+### 10. Combining Grid & Flexbox (`src/5-gridflex_index.html`)
+
+* Created a responsive layout using both Grid and Flexbox.
+* Used:
+
+  ```html
+  class="grid grid-cols-1 lg:grid-cols-3"
+  class="lg:col-span-2 flex"
+  ```
+* Ensured elements adjusted based on screen size.
+
+---
+
+### 11. Responsive Image Gallery (`src/6-imageGallery.html`)
+
+* Added a responsive gallery using Tailwind Grid:
+
+  * 3 columns on large screens: `lg:grid-cols-3`
+  * 1 column on small screens: `grid-cols-1`
+* Made images responsive using `w-full`, `h-48`, and `object-cover`.
+
+---
+
+## 🔬 Learning Objectives
+
+* **Semantic HTML**: Proper document structure and accessibility.
+* **Tailwind CSS**: Utility-first responsive design.
+* **Flexbox & Grid**: Combined use of layout systems.
+* **ARIA**: Accessible web forms with live alerts.
+* **Responsiveness**: Mobile-first design using Tailwind modifiers.
+* **SEO**: Use of metadata for better discoverability.
+
+---
+
+## 💡 Requirements
+
+* Node.js
+* Basic knowledge of HTML, CSS, JavaScript
+* Familiarity with VSCode or similar
+* GitHub for project versioning
+* Tailwind CSS via npm or CDN
+* Modern browser for rendering
+
+---
+
+## 💧 Tools Used
+
+* HTML5
+* Tailwind CSS (CDN & CLI)
+* VS Code
+* Git & GitHub
+
+---
+
+## 📍 Project Structure
+
+```
+0x02-tailwind-css/
+├── tailwind.config.js
+├── src/
+|   |── images/
+│   ├── input.css
+│   ├── output.css
+│   ├── 0-index.html
+│   ├── 1-index.html
+│   ├── 2-index.html
+│   ├── 3-index.html
+│   ├── 3-nav_index.html
+│   ├── 4-flexbox_index.html
+│   ├── 5-gridflex_index.html
+│   └── 6-imageGallery.html
+```
+
+---
+
+## 📎 Author
+
+**Tracy Karanja 🌸**
+*Student, Frontend Developer & Tech Enthusiast*
 
 ---
 
