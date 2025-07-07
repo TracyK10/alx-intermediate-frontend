@@ -84,7 +84,7 @@ This project is a hands-on exploration of **semantic HTML**, **Tailwind CSS**, a
 
 ---
 
-### 6. Basic Grid Layout (`src/1-index.html`)
+### 6. Basic Grid Layout (`1-index.html`)
 - Created a 3-column CSS grid layout using Tailwind:
   ```html
   class="grid grid-cols-3 gap-4"
@@ -93,28 +93,28 @@ This project is a hands-on exploration of **semantic HTML**, **Tailwind CSS**, a
 
 ---
 
-### 7. Nested Grids (`src/2-index.html`)
+### 7. Nested Grids (`2-index.html`)
 
 * Created a 2x2 grid layout with nested grids inside each column.
 * Styled inner content with gradient backgrounds and padding.
 
 ---
 
-### 8. Flexbox Navigation Bar (`src/3-nav_index.html`)
+### 8. Flexbox Navigation Bar (`3-nav_index.html`)
 
 * Created a horizontal nav bar with Tailwind Flexbox.
 * Applied spacing, text styling, hover effects, and responsive column behavior using media queries.
 
 ---
 
-### 9. Responsive Flexbox Layout (`src/4-flexbox_index.html`)
+### 9. Responsive Flexbox Layout (`4-flexbox_index.html`)
 
 * Used `flex` class to layout an `aside` and `section`.
 * Applied width classes (`w-1/3` and `w-2/3`) and responsive direction changes.
 
 ---
 
-### 10. Combining Grid & Flexbox (`src/5-gridflex_index.html`)
+### 10. Combining Grid & Flexbox (`5-gridflex_index.html`)
 
 * Created a responsive layout using both Grid and Flexbox.
 * Used:
@@ -127,7 +127,7 @@ This project is a hands-on exploration of **semantic HTML**, **Tailwind CSS**, a
 
 ---
 
-### 11. Responsive Image Gallery (`src/6-imageGallery.html`)
+### 11. Responsive Image Gallery (`6-imageGallery.html`)
 
 * Added a responsive gallery using Tailwind Grid:
 
@@ -146,14 +146,14 @@ This project is a hands-on exploration of **semantic HTML**, **Tailwind CSS**, a
 |   |── images/
 │   ├── input.css
 │   ├── output.css
-│   ├── 0-index.html
-│   ├── 1-index.html
-│   ├── 2-index.html
-│   ├── 3-index.html
-│   ├── 3-nav_index.html
-│   ├── 4-flexbox_index.html
-│   ├── 5-gridflex_index.html
-│   └── 6-imageGallery.html
+├── 0-index.html
+├── 1-index.html
+├── 2-index.html
+├── 3-index.html
+├── 3-nav_index.html
+├── 4-flexbox_index.html
+├── 5-gridflex_index.html
+└── 6-imageGallery.html
 ```
 
 ---
