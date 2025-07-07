@@ -1,0 +1,5 @@
+1. Opened terminal on Windows.
+2. Navigated to the project directory: alx-intermediate-frontend\0x03-sass_scss
+3. Verified that Node.js was installed by running: node -v
+4. Ran: npm install sass
+5. Sass installed successfully (latest version).
