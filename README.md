@@ -1,8 +1,8 @@
-# Tailwind CSS & Semantic HTML Practice Project
+# Semantic HTML, Tailwind CSS & Sass Practice Project
 
 ## 📄 Overview
 
-This project is a hands-on exploration of semantic HTML and Tailwind CSS, focused on building responsive, accessible, and well-structured web layouts. Each task builds progressively from fundamental HTML semantics to advanced utility-first CSS techniques using Tailwind.
+This project is a hands-on exploration of **semantic HTML**, **Tailwind CSS**, and **Sass/SCSS**, aimed at building responsive, accessible, and modular web layouts. It includes tasks that progressively develop skills in structuring HTML documents semantically, designing layouts with utility-first CSS (Tailwind), and writing maintainable styles using Sass features like variables, nesting, and mixins. All configurations and setups were completed on a **Windows environment** using **Node.js**, **PowerShell**, and the **Sass CLI**.
 
 
 ## ✅ Project Breakdown
@@ -62,9 +62,6 @@ This project is a hands-on exploration of semantic HTML and Tailwind CSS, focuse
 
 ---
 
-## 🛠️ Tools Used
-- HTML5
-- Manual editing in a text editor (e.g. VS Code)
   
 ## 📂 Project Structure
 
@@ -140,37 +137,6 @@ This project is a hands-on exploration of semantic HTML and Tailwind CSS, focuse
 
 ---
 
-## 🔬 Learning Objectives
-
-* **Semantic HTML**: Proper document structure and accessibility.
-* **Tailwind CSS**: Utility-first responsive design.
-* **Flexbox & Grid**: Combined use of layout systems.
-* **ARIA**: Accessible web forms with live alerts.
-* **Responsiveness**: Mobile-first design using Tailwind modifiers.
-* **SEO**: Use of metadata for better discoverability.
-
----
-
-## 💡 Requirements
-
-* Node.js
-* Basic knowledge of HTML, CSS, JavaScript
-* Familiarity with VSCode or similar
-* GitHub for project versioning
-* Tailwind CSS via npm or CDN
-* Modern browser for rendering
-
----
-
-## 💧 Tools Used
-
-* HTML5
-* Tailwind CSS (CDN & CLI)
-* VS Code
-* Git & GitHub
-
----
-
 ## 📍 Project Structure
 
 ```
@@ -191,6 +157,143 @@ This project is a hands-on exploration of semantic HTML and Tailwind CSS, focuse
 ```
 
 ---
+
+## 🎨 Sass / SCSS Practice
+
+> ⚙️ **Environment**: Development and compilation were done on **Windows** using Node.js and the Sass CLI.
+
+### ✅ 1. Debugging Output (`0-debug_log.scss`)
+
+* Used `@debug` to print a debug message:
+
+  ```scss
+  @debug "Hello world";
+  ```
+
+---
+
+### ✅ 2. Color Variable (`1-color_variable.scss`)
+
+* Declared a variable `$text-color: #3D3D3D;`
+* Applied it to both `body` and `p` tags using Sass variable syntax.
+
+---
+
+### ✅ 3. Nested Tags (`2-nested_tag.scss`)
+
+* Nested the `p` selector inside `body`:
+
+  ```scss
+  body {
+    margin: 0px;
+    padding: 0px;
+
+    p {
+      margin: 10px;
+    }
+  }
+  ```
+
+---
+
+### ✅ 4. Margin Mixins (`8-mixin_margins.scss`)
+
+* Created a mixin for horizontal margins:
+
+  ```scss
+  @mixin margins($value) {
+    margin-left: $value;
+    margin-right: $value;
+  }
+  ```
+* Applied it using `@include`:
+
+  * `@include margins(10px);` on `body`
+  * `@include margins(15px);` on `div`
+
+---
+
+### ⚙️ Sass Installation and Compilation on Windows
+
+#### Installation
+
+```bash
+npm install -g sass
+```
+
+#### Compilation Command
+
+To compile a `.scss` file to `.css`:
+
+```bash
+sass input.scss output.css
+```
+
+To watch a file for changes and auto-compile:
+
+```bash
+sass --watch input.scss:output.css
+```
+
+You can also watch an entire folder:
+
+```bash
+sass --watch src/:dist/
+```
+
+> ℹ️ Replace `src/` with the folder containing your `.scss` files and `dist/` with the output destination for `.css` files.
+
+---
+
+## 📁 Sass Project Structure
+
+```
+0x03-sass_scss/
+├── 0-debug_log.scss
+├── 1-color_variable.scss
+├── 2-nested_tag.scss
+├── 3-mixin_margins.scss
+```
+
+---
+
+## 🔬 Learning Objectives
+
+* **Semantic HTML**: Proper document structure and accessibility using semantic tags.
+* **Tailwind CSS**: Utility-first CSS framework for responsive design.
+* **Flexbox & Grid**: Combined use of modern layout systems.
+* **ARIA**: Accessible web forms with screen reader support.
+* **Responsiveness**: Mobile-first layouts using Tailwind modifiers.
+* **SEO**: Use of metadata and structure for improved discoverability.
+* **Sass / SCSS**: Writing maintainable and modular CSS using variables, nesting, and mixins.
+* **Command Line & Environment Setup**: Installing and running tools like Node.js and Sass CLI on Windows.
+
+---
+
+## 💡 Requirements
+
+* Node.js (v14 or higher recommended)
+* Windows terminal or PowerShell (for Windows users)
+* Sass CLI (`npm install -g sass`)
+* Basic knowledge of HTML, CSS, JavaScript
+* Familiarity with VS Code or a similar code editor
+* Git & GitHub for version control
+* Tailwind CSS via npm or CDN
+* A modern browser (e.g. Chrome, Firefox, Edge)
+
+---
+
+## 💧 Tools Used
+
+* **HTML5**
+* **Sass / SCSS** (CLI + modular CSS)
+* **Tailwind CSS** (via CDN & CLI)
+* **Visual Studio Code**
+* **Git & GitHub**
+* **Windows PowerShell** (for setup and CLI execution)
+
+---
+
 
 ## 📎 Author
 
